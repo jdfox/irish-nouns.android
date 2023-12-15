@@ -12,7 +12,7 @@ static def getBuildVersion() {
 
 plugins {
     id 'com.android.application'
-    id 'io.fabric'
+    id 'com.google.firebase.crashlytics'
     id 'com.github.triplet.play' version '2.4.2'
 }
 
@@ -46,6 +46,7 @@ android {
             signingConfig signingConfigs.release
         }
     }
+    namespace 'com.syzible.irishnoungenders'
 }
 
 play {
